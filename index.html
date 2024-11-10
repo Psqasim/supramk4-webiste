@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyota Supra MK4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+                   <!--for header logo nav   -->
+
+    <header class="navbar">
+      <img src="logoo.png" alt="Toyota Logo" class="logo" />
+        <!-- for mobile nav responsiive -->
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+          <!-- navbbar -->
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+                     <!-- for button -->
+
+      <div class="buttons">
+        <button class="primary-btn">Book Now</button>
+        <button class="secondary-btn">Test Drive</button>
+      </div>
+    </header>
+
+                     <!-- for hero section -->
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Toyota Supra MK4</h1>
+            <h2>Iconic Japanese Sports Car</h2>
+            <p>
+              Unleash the thrill with the legendary Toyota Supra MK4, known for
+              its power, speed, and timeless design.
+            </p>
+          </div>
+          <div class="hero-image">
+            <img src="supra.jpg" alt="Toyota Supra MK4" />
+          </div>
+        </div>
+      </section>
+                     <!-- for flexboxes  -->
+                      
+      <section class="features-section" id="features">
+        <div class="features-grid">
+          <div class="feature">
+            <img src="engine.webp" alt="Engine Icon" />
+            <p><strong>Engine:</strong> 3.0L Twin Turbo 2JZ-GTE</p>
+          </div>
+          <div class="feature">
+            <img src="gear.jpg" alt="Gearbox Icon" />
+            <p><strong>Transmission:</strong> 6-Speed Manual</p>
+          </div>
+          <div class="feature">
+            <img src="speed.jpg" alt="Speed Icon" />
+            <p><strong>Top Speed:</strong> 250 km/h</p>
+          </div>
+          <div class="feature">
+            <img src="brake.jpg" alt="Brakes Icon" />
+            <p><strong>Brakes:</strong> High-Performance Disc Brakes</p>
+          </div>
+          <div class="feature">
+            <img src="twin.jpg" alt="Turbo" />
+            <p>
+              <strong>Twin Turbo:</strong> 2JZ-GTE 3.0-litre twin-turbocharged
+              straight 6 with 280 horsepower.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="exhuast.webp" alt="exhuast" />
+            <p>
+              <strong>Exhuast:</strong>This exhaust system is crafted from
+              premium Titanium, offering a weight reduction of up to 40%
+              compared to standard steel exhausts.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="tyre.jpg" alt="tyre" />
+            <p>
+              <strong>Tryes:</strong>The wheels I plan on getting are the Advan
+              RS 18" (in gun metal for those interested) with 9" at the front
+              and 10" inch at the back with an offset of 35.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="nitro.jpg" alt="nitro" />
+            <p>
+              <strong>Nitro:</strong>The Nitro MK4 Supra is a legendary Japanese
+              sports car known for its powerful turbocharged engine, sleek
+              design, and exceptional performance on the street and track.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+             <!-- for footer -->
+    <footer>
+      <p>&copy; 2024 Toyota Enthusiasts</p>
+    </footer>
+          <!-- js for scroll and navbar for mresponsive -->
+    <script>
+      // Mobile menu functionality
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const nav = document.querySelector("nav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
